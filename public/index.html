@@ -11,7 +11,10 @@
         <h1 class="title">Ninjaaa - REST API</h1>
         <div id="homepage">
             <h2>Hire a ninja in your area!</h2>
-            <div id="ninjas"></div>
+            <div id="header">
+                <img src="https://github.com/fuchien/NodeJS-RealTime/blob/master/app/public/images/login.jpg?raw=true" alt="Ninja programming">
+                <div id="ninjas"></div>
+            </div>
         </div>
 
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -42,12 +45,12 @@
                         <div id="ninja-container">
                             <form id="search" onSubmit={this.handleSubmit}>
                                 <label for="lat">Enter your latitude: </label>
-                                <input type="text" name="lat" ref="lat" placeholder="latitude" required/>
+                                <input type="text" name="lat" ref="lat" placeholder="latitude" autofocus required/>
                                 <label for="lng">Enter your longitude: </label>
                                 <input type="text" name="lng" ref="lng" placeholder="longitude" required/>
                                 <input type="submit" value="Find Ninjas"/>
                             </form>
-                            <ul>
+                            <ul id="ninjas">
                                 { ninjas }
                             </ul>
                         </div>

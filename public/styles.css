@@ -4,6 +4,19 @@ body{
     background: #ff5252;
     margin: 10px 30px;
 }
+#header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+img {
+    max-height: 25vh;
+    max-width: 25vw;
+}
+#ninjas {
+    position: relative;
+    margin: 0 auto;
+}
 #homepage{
     max-width: 800px;
     margin: 60px auto;
